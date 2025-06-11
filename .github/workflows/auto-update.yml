@@ -27,4 +27,5 @@ jobs:
           git commit -m "Atualização automática do panorama" || echo "Nada para commitar"
           git push --force https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
 
+
 ..

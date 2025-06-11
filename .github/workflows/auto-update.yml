@@ -25,4 +25,6 @@ jobs:
           git config user.email actions@github.com
           git add index.html || echo "Nada para adicionar"
           git commit -m "Atualização automática do panorama" || echo "Nada para commitar"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
+          git push --force https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
+
+..
